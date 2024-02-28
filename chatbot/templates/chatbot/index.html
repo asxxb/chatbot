@@ -1,0 +1,23 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="{% static 'chatbot/style.css' %}">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="message-container"></div>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="{% static 'chatbot/script.js' %}"></script>
+</body>
+</html>
